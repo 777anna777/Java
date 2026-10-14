@@ -2,9 +2,7 @@
 
 Лабораторна робота №1 з дисципліни «Технології розробки на платформі Java».
 
-## Варіант
-
-**V = N mod 3 = 0** (номер залікової книжки `N` підставити самостійно).
+**V = 3 mod 3 = 0** 
 
 ## Опис
 
@@ -12,23 +10,14 @@
 - `sealed interface OrderStatus` обмежує типи статусів;
 - `record Pending`, `Paid`, `Shipped`, `Cancelled` представляють незмінні дані;
 - компактні конструктори перевіряють правильність вхідних даних;
-- `OrderProcessor.process(OrderStatus)` використовує вичерпний `switch expression` із pattern matching **без `default`**;
+- `OrderProcessor.process(OrderStatus)` використовує вичерпний `switch expression` із pattern matching без `default`;
 - вихідні повідомлення формуються за допомогою Java Text Blocks.
 
 Усі класи знаходяться в пакеті `ua.kpi.comsys.dop`.
 
-## Вимоги
-
-- JDK 21+
-- Maven 3.9+ (або Maven, вбудований в IntelliJ IDEA)
-
 ## Запуск тестів
 
-```bash
-mvn test
-```
-
-Альтернативно відкрийте папку проєкту в IntelliJ IDEA та запустіть `OrderProcessorTest`.
+Відкрийте папку проєкту в IntelliJ IDEA та запустіть `OrderProcessorTest`.
 
 ## Структура
 
@@ -46,10 +35,3 @@ pom.xml
 README.md
 ```
 
-## Тестування
-
-Тести JUnit 5 перевіряють чотири гілки `switch`, null-статус, невалідні значення `Paid`, `Shipped`, `Cancelled` і точний текст результатів.
-
-## Здача
-
-Завантажте проєкт у **публічний GitHub-репозиторій**. Додайте в Google Classroom посилання на репозиторій.
