@@ -1,4 +1,4 @@
-# Order Management — Java DOP (Lab 1, V=0)
+# Order Management (Lab 1)
 
 Лабораторна робота №1 з дисципліни «Технології розробки на платформі Java».
 
